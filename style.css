@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: hsla(228, 15%, 20%);
+}
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* ================================== HEADER & NAVBAR ==================================== */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 4%;
+  background: rgb(28, 28, 36);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+.nav-links li {
+  display: inline;
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+.nav-links a {
+  color: white;
+  transition: 0.5s;
+}
+.nav-links a:hover {
+  color: rgb(25, 67, 192);
+}
+/* ================================================================================== */
+
+/* =============================== HOME CODE ======================================== */
+#home {
+  background: hsla(228, 15%, 20%);
+  padding: 70px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  flex-wrap: wrap;
+}
+.home-h3 {
+  font-size: 30px;
+}
+.home-h1 {
+  font-size: 45px;
+}
+.home-h2 {
+  font-size: 30px;
+  color: rgb(25, 67, 192);
+}
+.home-p {
+  padding: 20px 0px;
+}
+.home-btn {
+  padding: 18px;
+  border: none;
+  background-color: rgb(25, 67, 192);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.home-btn:hover {
+  transform: translateY(-15%);
+  color: darkblue;
+  background-color: white;
+  box-shadow: 0px 0px 20px darkblue, 0px 0px 40px darkblue;
+}
+.social-media {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+  font-size: 29px;
+}
+.social-media i {
+  color: white;
+}
+
+#bx {
+  cursor: pointer;
+  background-color: rgb(25, 67, 192);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#bx:hover {
+  color: darkblue;
+  background-color: white;
+  box-shadow: 0px 0px 20px darkblue, 0px 0px 40px darkblue;
+}
+.media {
+  transition: 0.5s;
+}
+.media:hover {
+  transform: translateY(-8%);
+}
+
+.home-img {
+  background-color: rgb(6, 42, 148);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  backdrop-filter: blur(30px);
+}
+#active {
+  color: rgb(25, 67, 192);
+}
+/* =========================================================================================== */
+
+/* ======================================= ABOUT CODE ========================================= */
+#about {
+  background: rgb(28, 28, 36);
+  padding: 50px 0;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  color: white;
+  flex-wrap: wrap;
+}
+.about-header {
+  color: white;
+  text-align: center;
+  padding: 80px 0px;
+}
+.about-img {
+  width: 300px;
+}
+.about-background {
+  background: hsla(228, 15%, 20%);
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 0 12px rgb(25, 67, 192);
+  border-radius: 10px;
+  animation: glow 2s infinite;
+}
+.about-experience {
+  background: hsla(228, 15%, 20%);
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 0 12px rgb(25, 67, 192);
+  border-radius: 10px;
+  animation: glow 2s infinite;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 12px rgb(25, 67, 192);
+  }
+  50% {
+    box-shadow: 0 0 24px rgb(25, 67, 192);
+  }
+}
+.about-h3 {
+  padding-bottom: 12px;
+}
+
+span {
+  color: rgb(25, 67, 192);
+}
+/* =========================================================================================== */
+
+/* ================================== SERVICE SECTION ==================================== */
+.service-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+.service-container i {
+  color: rgb(25, 67, 192);
+  font-size: 40px;
+}
+.service-header {
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+.front-end-container,
+.back-end-container,
+.ui-ux-container {
+  background-color: rgb(28, 28, 36);
+  text-align: center;
+  padding: 20px 5px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.front-end-container:hover,
+.back-end-container:hover,
+.ui-ux-container:hover {
+  box-shadow: 0 0 12px rgb(25, 67, 192), 0 0 24px rgb(25, 67, 192);
+  cursor: pointer;
+}
+
+.front-title,
+.back-title,
+.ui-ux-title {
+  padding: 10px 0;
+}
+.service-p {
+  padding: 10px;
+}
+/* ====================================================================================== */
+
+/* ================================= CONTACT SECTION ===================================== */
+#contact {
+  background: rgb(28, 28, 36);
+}
+.section-subtitle {
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+.section-subtitle span {
+  font-size: 28px;
+}
+
+.contact-container {
+  padding-top: 1rem;
+}
+.contact-form,
+.contact-group {
+  display: grid;
+  grid-template-columns: min-content;
+  row-gap: 1rem;
+  place-items: center;
+  place-content: center;
+}
+.contact-form {
+  position: relative;
+}
+.contact-input {
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  background-color: hsla(228, 15%, 20%);
+  color: white;
+  border: none;
+}
+.contact-input::placeholder {
+  color: grey;
+}
+textarea {
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;
+  width: 400px;
+}
+.contact-button {
+  padding: 18px;
+  border: none;
+  background-color: rgb(25, 67, 192);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-bottom: 1rem;
+}
+.contact-button:hover {
+  transform: translateY(-15%);
+  color: darkblue;
+  background-color: white;
+  box-shadow: 0px 0px 20px darkblue, 0px 0px 40px darkblue;
+}
+.scroll-up {
+  background-color: rgb(24, 31, 59);
+  padding: 12px;
+  border-radius: 0.5rem;
+  color: white;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  transition: 0.5s;
+}
+.scroll-up i {
+  font-size: 20px;
+}
+.scroll-up:hover {
+  transform: translateY(-10%);
+  box-shadow: 0 0 12px rgb(25, 67, 192), 0 0 24px rgb(25, 67, 192);
+}
+.menu-btn,
+.close-btn {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+  margin-left: 30rem;
+}
+
+@media (max-width: 619px) {
+  .menu-btn,
+  .close-btn {
+    margin-left: 25rem;
+  }
+}
+@media (max-width: 535px) {
+  .menu-btn,
+  .close-btn {
+    margin-left: 20rem;
+  }
+}
+@media (max-width: 450px) {
+  .menu-btn,
+  .close-btn {
+    margin-left: 15rem;
+  }
+}
+@media (max-width: 430px) {
+  
+  .social-media {
+    margin-right: 80px;
+  }
+  .about-background,
+  .about-experience {
+    width: 380px;
+  }
+  .menu-btn,
+  .close-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .service-container {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+  .home-h1 {
+    font-size: 35px;
+  }
+  .social-media {
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 100px;
+  }
+  .service-container {
+    gap: 50px;
+  }
+  .nav-links {
+    position: fixed;
+    top: 92px;
+    right: -100%;
+    backdrop-filter: blur(20px);
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    gap: 50px;
+    transition: 0.5s ease;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .menu-btn {
+    display: none !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu-btn {
+    display: none !important;
+  }
+}
