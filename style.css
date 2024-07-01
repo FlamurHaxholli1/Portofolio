@@ -59,6 +59,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
+  margin-left: 8rem;
   color: white;
   flex-wrap: wrap;
 }
